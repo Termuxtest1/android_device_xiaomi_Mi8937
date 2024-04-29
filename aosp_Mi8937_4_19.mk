@@ -13,9 +13,6 @@ $(call inherit-product, device/xiaomi/Mi8937/device.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Call the BCR setup
-$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
 WITH_GMS := false
 
 MATRIXX_BUILD_TYPE := Unofficial
